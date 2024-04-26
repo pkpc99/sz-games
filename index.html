@@ -1,157 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <meta charset="UTF-8">
-
-
-     <!--link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
-
-
-     <!--Icons-->
-     <script src="https://kit.fontawesome.com/26f4207121.js" crossorigin="anonymous"></script>
-     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
-     
-     <!--ONESIGNAL PUSH-->
-     <script>
-      window.onload = function() {
-
-          const scriptEly = document.createElement('script');
-
-          scriptEly.src = 'https://cdn.onesignal.com/sdks/OneSignalSDK.js';
-
-        
-          scriptEly.addEventListener('load', () => {
-            window.OneSignal = window.OneSignal || [];
-          OneSignal.push(function() {
-            OneSignal.init({
-              appId: "08b63425-6f02-4ecb-ad79-8bb871e63518",
-              autoResubscribe: true, // This ensures the prompt shows again if dismissed
-
-              safari_web_id: "web.onesignal.auto.54d60a3d-c0d7-4ae1-b490-c29a9cfa7b70",
-              notifyButton: {
-                enable: false,
-              },
-              promptOptions: {
-                  customlink: {
-                    enabled: true, /* Required to use the Custom Link */
-                    style: "button", /* Has value of 'button' or 'link' */
-                    size: "medium", /* One of 'small', 'medium', or 'large' */
-                    color: {
-                      button: '#2e2e2e', /* Color of the button background if style = "button" */
-                      text: 'white', /* Color of the prompt's text */
-                    },
-                    text: {
-                      subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
-                      unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
-                      explanation: "Get updates about new games and known issues.", /* Optional text appearing before the prompt button */
-                    },
-                    unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
-                  }
-                }
-            });
-          });
-                
-          });
-
-          document.head.appendChild(scriptEly);
-
-      }
-    
-
-     </script>
-
-
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png" type="image/png">
-
-<meta name="title" content="Sz Games">
-<meta name="author" content="Sz Games">
-<title>Sz Games</title>
-<meta name="revisit-after" content="1 days" />
-
-<link rel="apple-touch-startup-image" href="https://sz-games.github.io/launch.png">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<meta property="og:image" content="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png" />
-
-<link rel="icon" href="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png">
-<meta name="description" content="The Best Place To Play over 100+ Games in school or at home."> 
-<meta property="og:site_name" content="Sz Games">
-
-<meta property="og:title" content="Sz Games">
-<meta name="description" property="og:description" content="The Best Place To Play over 100+ Games in school or at home."> 
-<meta content="website" property="og:type">
-<meta name="description" property="twitter:description" content="The Best Place To Play over 100+ Games in school or at home."> 
-<meta name="language" content="English">
-<script src="./GobalSettings.js"></script>
-
-<meta
-name="keywords"
-content="sz games, sz games unblocked, games, unblocked games, school, games, games to play, games on the web, html5 games, sz, sz-games, play games online,  online games"
-/> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1654900800235927"
-crossorigin="anonymous"></script>
-<script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "WebPage",
-      "name": "Sz Games",
-      "logo": "https://sz-games.github.io/G-Google.png"
-  }
-  </script>
-
-
-
-
-
-
-
-</head>
+<head><meta charset="UTF-8"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Icons--> <script src="https://kit.fontawesome.com/26f4207121.js" crossorigin="anonymous"></script> <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'"><meta name="title" content="Sz Games"><title>SZ Games</title><meta property="og:title" content="Sz Games"><meta name="description" property="og:description" content="The Best Place To Play over 100+ Games in school or at home."> <meta content="website" property="og:type"><meta name="description" property="twitter:description" content="The Best Place To Play over 100+ Games in school or at home."> <meta name="language" content="English"><metaname="keywords"content="sz games, sz games unblocked, games, unblocked games, school, games, games to play, games on the web, html5 games, sz, sz-games, play games online, online games"/> <meta name="viewport" content="width=device-width, initial-scale=1"></head>
 
 <style>
-::-webkit-scrollbar-track-piece {
- 
-  border-radius: 15px;
-}
-
-.bodyold {
-  background: linear-gradient(to bottom, #1d1d1d, #2f2f2f, rgb(58, 58, 58), #1d1d1d, #2f2f2f);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-}
 
 body {
-  background: rgb(35, 35, 35);
-  
-
+  background: #232323;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-
 }
 
-img {
-  
+img {  
   margin: 10px;
 position: relative;
 z-index: 1;
 }
 
 .btn-group button {
-  background-color: black; /* Green background */
- 
-  color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
+  background-color: black;
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
 }
 
 /* Clear floats (clearfix hack) */
@@ -165,77 +36,50 @@ z-index: 1;
   border-right: none; /* Prevent double borders */
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: grey;
-}
-
-/* Header/Logo Title */
-.header-halloween {
-  padding: 60px;
-  text-align: center;
-  background: linear-gradient(to bottom right, #ff5e00, rgb(39, 39, 39), rgb(39, 39, 39));
-  color: white;
-  width: auto;
-  font-size: 30px;
-  position: relative;
-z-index: 1;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
 
 .header {
   position: relative;
 z-index: 1;
-  padding: 60px;
+  padding: 60px 60px 20px 60px;
   text-align: center;
-  /*background: linear-gradient(to bottom right, #9a9a9a, rgb(39, 39, 39)); */
   background:rgb(55, 53, 53);
   color: white;
-  width: auto;
   font-size: 30px;
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 0px 0px 15px 15px;
+  font-family: sans-serif;
 }
-
-/* Page Content */
-
 </style>
 
 
 <body>
-  <div id="LOADINGSCREENWEB" style="display: none; z-index: 50; position: fixed; width: 100%; height: 100%; background-color: #2f2f2f;">
-    <h1 style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; color: white;">Loading Games...</h1>
-
-  </div>
 
 <style>
-    .game {
-        position: absolute;
-color: white;
+.game {
+  position: absolute;
+  color: white;
 
   transform: scale(1.8);
   z-index: 3;
   font-family: Arial, Helvetica, sans-serif;
-    }
-    .fade {
-        position: absolute;
-        background: linear-gradient(to bottom, #1d1d1d, #1d1d1d5d, rgba(39, 39, 39, 0));
-        width: 300px;
-        height: 150px;
-     border-radius: 15px;
-    }
+}
+.fade {
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    #1d1d1d,
+    #1d1d1d5d,
+    rgba(39, 39, 39, 0)
+  );
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+}
 
-
-
-
-*,
-*:before,
-*:after {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --locked-color: #9d9d9d;
+  --unlocked-color: #ff4e4e;
 }
 
 .container {
@@ -243,140 +87,8 @@ color: white;
   margin: 1rem auto;
 }
 
-
-.bg,
-.overlay {
-  text-align: center;
-}
-
-img,
-.overlay {
-  transition: .3s all;
-  border-radius: 3px;
-}
-
-.day {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: white;
-  position: relative;
-z-index: 1;
-}
-
-.bubbles{
-  position: fixed;
-  width:100%;
-  height: 100%;
-  z-index: 0;
-  overflow:hidden;
-  top:0;
-  left:0;
-}
-.bubble{
-  position: absolute;
-  bottom:-100px;
-  width:40px;
-  height: 40px;
-  background: linear-gradient(to top right, #c68324, #bd0d0d5d);
-  border-radius:50%;
-  opacity:0.5;
-  animation: rise 10s infinite ease-in;
-}
-.bubble:nth-child(1){
-  width:40px;
-  height:40px;
-  left:10%;
-  animation-duration:8s;
-}
-.bubble:nth-child(2){
-  width:20px;
-  height:20px;
-  left:20%;
-  animation-duration:5s;
-  animation-delay:1s;
-}
-.bubble:nth-child(3){
-  width:50px;
-  height:50px;
-  left:35%;
-  animation-duration:7s;
-  animation-delay:2s;
-}
-.bubble:nth-child(4){
-  width:80px;
-  height:80px;
-  left:50%;
-  animation-duration:11s;
-  animation-delay:0s;
-}
-.bubble:nth-child(5){
-  width:35px;
-  height:35px;
-  left:55%;
-  animation-duration:6s;
-  animation-delay:1s;
-}
-.bubble:nth-child(6){
-  width:45px;
-  height:45px;
-  left:65%;
-  animation-duration:8s;
-  animation-delay:3s;
-}
-.bubble:nth-child(7){
-  width:90px;
-  height:90px;
-  left:70%;
-  animation-duration:12s;
-  animation-delay:2s;
-}
-.bubble:nth-child(8){
-  width:25px;
-  height:25px;
-  left:80%;
-  animation-duration:6s;
-  animation-delay:2s;
-}
-.bubble:nth-child(9){
-  width:15px;
-  height:15px;
-  left:70%;
-  animation-duration:5s;
-  animation-delay:1s;
-}
-.bubble:nth-child(10){
-  width:90px;
-  height:90px;
-  left:25%;
-  animation-duration:10s;
-  animation-delay:4s;
-}
-@keyframes rise{
-  0%{
-    bottom:-100px;
-    transform:translateX(0);
-  }
-  50%{
-    transform:translate(100px);
-  }
-  100%{
-    bottom:1080px;
-    transform:translateX(-200px);
-  }
-}
-
-.hello img {
-            width: 100%;
-            transition: 0.5s all ease-in-out;
-        }
-     
-        .hello:hover img {
-          transform-origin: top;
-            transform: scale(1.1);
-        }
-
-
 </style>
+
 <style>
   .topnav {
   overflow: hidden;
@@ -385,10 +97,6 @@ z-index: 1;
   display: none;
   border-radius: 30px;
   background-color: #333;
-}
-
-p {
-  transition: 0.5s;
 }
 
 .topnav p {
@@ -402,17 +110,16 @@ p {
 }
 .ImageForGame {
   border-radius: 15px;
-   width: 180px; 
+width: 139px; 
+height: 140px;
  opacity: 0;
- 
-  height: 180px;
-  transition: 0.5s;
-  box-shadow: 5px 5px 5px 5px rgba(13, 13, 13, 0.725);
+  transition: .5s;
+  box-shadow: 5px 5px 5px 5px rgba(13,13,13, .7);
 
 }
 .ImageForGame:hover{
   transform: scale(1.1);
-  box-shadow: 2px 2px 2px 2px rgba(79, 79, 79, 0.725);
+  box-shadow: 2px 2px 2px 2px rgba(79,79,79, .7);
 
 }
 @keyframes scroll {
@@ -1078,13 +785,6 @@ p {
   transition: bottom 0.5s ease-in-out;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --locked-color: #9d9d9d;
-  --unlocked-color: #ff4e4e;
-}
 .container {
   display: flex;
   align-items: center;
@@ -1302,40 +1002,71 @@ setTimeout(() => {
 <!--Start-->
 <div id="Tile1109" style="display: none; z-index: 80; width: 100%; height: 100%; position: fixed; background-color: #2f2f2f2c;">
   
-  <style>
-    .OPENBOX {
-      width: 70%;
-       overflow-y: auto; 
-       overflow-x: none; 
-       height:55%; 
-       transition: 0.5s;
-       border-radius: 15px; 
-       background-color: #1d1d1d; 
-       position: fixed;
-        z-index: 81;
-        top: 50%; 
-        left: 50%;
-       transform: translate(-50%, -50%);
-    }
-    
+<style>
+.OPENBOX {
+  width: 65%;
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
+  height: 60vh;
+padding: 0 30px;
+  border-radius: 15px;
+  background-color: #1d1d1d;
+  position: fixed;
+  z-index: 80;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.OPENBOX a,
+.OPENBOX li {
+list-style-type: none;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.OPENBOX p {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.OPENBOX h1 {
+  font-size: 28px;
+  margin: 15px 20px;
+}
+.OPENBOX span {
+  cursor: pointer;
+  font-size: 30px;
+  top: 15px;
+  right: 15px;
+  color: #aaa;
+  position: absolute;
+}
+
   </style>
    
-<div class="OPENBOX" style="">
-  <span onclick="closeINTRO()" class="material-icons notranslate"  style=" cursor: pointer;   font-size: 30px; top: 15px;  right: 15px; color: white;  position: absolute;">  
-     
-    close
-     
-     </span>
-  <h1 style="text-align: center; font-size: 28px; color: white; margin: 28px; word-wrap: break-word;">Welcome To Sz Games</h1>
-  <p style="text-align: center; font-size: 18px; color: white;">Check Out The Icons In The Top Right Corner</p>
-  <img style="left: 50%; position: relative; width: auto; height: auto; transform: translate(-50%, -0%);" alt="EXAMPLE-IMAGE" src="https://github.com/sz-games/sz-games.github.io/blob/main/TOPNAVSHOW.png?raw=true"/>
-  <p style="text-align: center; font-size: 18px; color: white;">Here You Can Access The Chat And The Menu.</p>
-  <p style="text-align: center; font-size: 18px; color: white; margin: 15px;">The Menu Will Have More Pages That Arent Shown On The Home Page</p>
-  <p style="text-align: center; font-size: 18px; color: white;">You Will also Find The Settings Here Where You Can Enable Useful Features.</p>
+<div class="OPENBOX">
+  <span onclick="closeINTRO()" class="material-icons notranslate">close</span>
+
+  <h1>Welcome To Sz Games</h1>
+<hr>
+<br>
+  <p>This is a fork of the original <a href="https://sz-games.github.io/">Sz Games</a> that I modified to run better
   <br>
-  <p style="text-align: center; font-size: 18px; color: white;">The Chat Is Open To Everyone So Check It Out! </p>
+<br>
+  Current plans:</p>
 
-
+ <ul>
+<li>Further clean the code</li>
+<li>Add more games</li>
+<li>Organize games alphabetically </li>
+<li>Fork every Games repository</li>
+<li>Just make it better overall</li>
+ </ul>
+<br>
+<p>Have fun :]</p>
 
 </div>
 </div>
@@ -1386,266 +1117,13 @@ if (isMobile2) {
   
   </div>
   </div>
-  
-  <script>
-    let TileSt3 = localStorage.getItem('1109ST3335')
-  
-    function closeINTRO2() {
-      localStorage.setItem('1109ST3335', 'true')
-  
-      document.getElementById('Tile110935').style.display = 'none'
-      TileSt3 = localStorage.getItem('1109ST3335')
-    }
-    const isMobile23 = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  
-  if (isMobile23) {
-    
-  } else {  
-    if(TileSt3) {
-      document.getElementById('Tile110935').style.display = 'none'
-    } else {
-      document.getElementById('Tile110935').style.display = 'none'
-    }
-  }
-    
-  </script>
-  <div id="Vip">
-
-  <div style=" opacity: 0; visibility: hidden; background-color: #1d1d1d6a; z-index: 90; position: fixed; width: 100%; height: 100%;" id="menuVip">
-    <div style="overflow: auto;  overflow-x: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; border-radius: 15px; height: 100%; background-color: rgb(81, 81, 81); position: absolute;">
-      <h1  style=" left: 10px; position: relative; font-size: 25px; color: white;">VIP Menu</h1>
-      <h1 class="notranslate" onclick="closeFade('menuVip')" style="cursor: pointer; right: 10px; top: 5px; position: absolute; font-size: 25px; color: white;">x</h1>
-      <h2 style="text-align: center; left: 10px; position: relative; font-size: 25px; color: white;">Header</h2>
-      <br>
-      <div id="options" style="">
-        <div style="width: 100%; position: relative; height: 100px;" id="headerBg">
-          <div style="width: 100%; overflow-y: hidden; display: flex; white-space: nowrap; overflow-x: scroll;">
-
-            <div id="normal" onclick="selectHeader('normal')" style="margin: 5px; cursor: pointer; top: 10px; left: 10px; border-radius: 5px; float: left; position: relative; width: 120px; height: 70px;">
-              <div style="border-radius: 5px; background: linear-gradient(to bottom right, #9a9a9a, rgb(39, 39, 39)); width: 120px; height: 70px;">
-
-              </div>
-          </div>
-
-          <div id="Transperent" onclick="selectHeader('Tsp')" style="margin: 5px; cursor: pointer; top: 10px; left: 10px; background: linear-gradient(to bottom right, #9a9a9a, rgb(39, 39, 39)); border-radius: 5px; float: left; position: relative; width: 120px; height: 70px;">
-          <p style="text-align: center; color: white;">Transperent</p>
-          <div style="width: 120px; height: 70px;"></div>
-          </div>
-
-
-
-          <div id="waltah" onclick="selectHeader('waltah')" style=" margin: 5px; cursor: pointer; float: left; position: relative; width: 120px; border-radius: 15px !important; height: 70px;">
-            <img alt="option" id="1" data-src="https://github.com/sz-games/sz-games.github.io/blob/main/Waltah.gif?raw=true" height="70px" width="120px"/>
-          </div>
-
-
-
-          <div id="east" onclick="selectHeader('east')" style="margin: 5px; cursor: pointer; float: left; position: relative; width: 120px; border-radius: 15px !important; height: 70px;">
-            <img alt="option" id="2" data-src="https://github.com/sz-games/sz-games.github.io/blob/main/KanyeEast.gif?raw=true" height="70px" width="120px"/>
-          </div>
-
-
-
-          <div id="shock" onclick="selectHeader('shock')" style="margin: 5px; cursor: pointer; float: left; position: relative; width: 120px; border-radius: 15px !important; height: 70px;">
-            <img alt="option" id="3" data-src="https://github.com/sz-games/sz-games.github.io/blob/main/Shock.gif?raw=true" height="70px" width="120px"/>
-          </div>
-
-          <div id="shock" onclick="selectHeader('AMeme')" style="margin: 5px; cursor: pointer; float: left; position: relative; width: 120px; border-radius: 15px !important; height: 70px;">
-            <img alt="option" id="4" data-src="https://github.com/sz-games/sz-games.github.io/blob/main/AMeme.gif?raw=true" height="70px" width="120px"/>
-          </div>
-
-          <div id="chip" onclick="selectHeader('chip')" style="margin: 5px; cursor: pointer; float: left; position: relative; width: 120px; border-radius: 15px !important; height: 70px;">
-            <img alt="option" id="5" data-src="https://github.com/sz-games/sz-games.github.io/blob/main/chip.gif?raw=true" height="70px" width="120px"/>
-          </div>
-
-
-          </div>
-        </div>
-        <br>
-
-        <h1 style="text-align: center;  font-size: 25px; color: white;">Background:</h1>
-
-        <div style="position: relative; width: 100%; height: 100px;" id="BG">
-
-          <div style="width: 100%; overflow-y: hidden; display: flex; white-space: nowrap; overflow-x: scroll;">
-          <div id="normal" onclick="selectHeader2('normal')" style="margin: 2px; cursor: pointer; top: 10px; left: 10px; background: linear-gradient(to bottom, #1d1d1d, #2f2f2f, rgb(58, 58, 58), #1d1d1d, #2f2f2f); border-radius: 5px; float: left; position: relative; width: 120px; height: 70px;">
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-      <br>
-
-
-
-    <br>
-    <div style="  " id="Opacity">
-      <h2 style="text-align: center; left: 10px;  font-size: 25px; color: white;">Game Icon Styles</h2>
-      <p style="text-align: center; color: white;">Opacity</p>
-      <input style="left: 50%; position: relative; transform:  translate(-50%, 0%);" type="range" id="opacitySlider" min="0" max="1" step="0.1" value="1" />
-
-      
-    </div>
-    <h1 style="position: absolute; bottom: 0;"><a style=" text-decoration: none; color: white;" href="./hacks">School Hacks</a></h1>
-    <br>
-    </div>
-  </div>
-    
-  </div>
-  <div id="VIPBUTTON" onclick="openFade('menuVip')" style="cursor: pointer; border-radius: 30px; width: 70px; right: 5px; height: 35px; position: fixed; top: 70px; z-index: 5; background-color: #1d1d1db9;">
-    <h1 style="font-size: 25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">VIP</h1>
-  </div>
-
-  <script>
-    
-    function openFade(element2) {
-    var element = document.getElementById(element2)
-    element.style.transition = '0.5s'
-    element.style.visibility = 'visible'
-   
-    element.style.opacity = 1
-
-  }
-
-  function closeFade(element2) {
-    var element = document.getElementById(element2)
-    element.style.transition = '0.5s'
-    element.style.opacity = 0
-    setTimeout(() => {
-      element.style.visibility = 'hidden'
-    }, 500);
-  }
-
-    
-
-    
-  </script>
-
-  
-
+<br>
 </div>
 
-<style>
-
-.header-waltah {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background-image: url("https://github.com/sz-games/sz-games.github.io/blob/main/Waltah.gif?raw=true");
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-
-.header-east {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background-image: url("https://github.com/sz-games/sz-games.github.io/blob/main/KanyeEast.gif?raw=true");
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-
-.header-shock {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background-image: url("https://github.com/sz-games/sz-games.github.io/blob/main/Shock.gif?raw=true");
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-.header-AMeme {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background-image: url("https://github.com/sz-games/sz-games.github.io/blob/main/AMeme.gif?raw=true");
-  background-repeat: no-repeat;
-  background-position-y: 10px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-.header-Tsp {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background: rgba(172, 157, 157, 0);
-  background-repeat: no-repeat;
-  background-position-y: 10px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-.header-chip {
-  position: relative;
-z-index: 1;
-  padding: 60px;
-  text-align: center;
-  background: rgba(172, 157, 157, 0);
-  background-image: url("https://github.com/sz-games/sz-games.github.io/blob/main/chip.gif?raw=true");
-  background-position-y: 10px;
-  background-size: cover;
-  color: white;
-  width: auto;
-  font-size: 30px;
-
- 
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 15px;
-}
-</style>
-
     <div id="Header" class="header">
-        <!--img src="https://github.com/sz-games/sz-games.github.io/blob/main/Gh.png?raw=true" style="position: relative; width: 150px; height: 150px;" alt="img"-->
-        <img src="https://github.com/sz-games/home/blob/main/G.png?raw=true"  fetchpriority="high" style="position: relative; width: 150px; height: 150px;" alt="Sz Games">
         <h1>Sz Games</h1>
         <p style="font-size: 20px;">By Bobby</p>
               <p style="font-size: 20px;">forked by pkpc99</p>
-      </div>
-      <br>
-
-<br>
 </div>
 
       
@@ -5482,11 +4960,11 @@ style="width: 80%; height: 40px; font-size: 15px; color: white; background-color
 
 </div>
 
-<div class="box"  id="bango cat" style="position: relative; float: left;">
+<div class="box" id="bongo cat" style="position: relative; float: left;">
   <a href="https://sz-games.github.io/games/game.html?game=https://sz-games.github.io/Games9/BANGOCAT">
     
     <img  class="ImageForGame" data-src="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/cover/BANGOCAT.png" alt="game">
- <div class="textover" style="width: 90%; border-radius: 15px; background-color: #191919db;  top: 15% !important; color: rgba(255, 255, 255, 0.827) !important; color: rgb(255, 255, 255) !important;">Bango Cat </div>
+ <div class="textover" style="width: 90%; border-radius: 15px; background-color: #191919db;  top: 15% !important; color: rgba(255, 255, 255, 0.827) !important; color: rgb(255, 255, 255) !important;">Bongo Cat </div>
       
   </a>
 
@@ -5680,23 +5158,6 @@ window.addEventListener("scroll", function() {
 
 </script>
 
-
-
-<section class="sticky">
-  <!--div class="bubbles">
-      <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-  </div-->
-
- 
 <script>
 
 const imageContainer = document.getElementById("games");
@@ -5862,251 +5323,6 @@ function loadGame() {
 }
 
   </script>
-  
-  <!--div class="bubbles" style="  filter: drop-shadow(0 0 10px white);" >
-  <div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-  </div-->
-</section>
-<script src="confetti.js"></script>
-
-      <!--ADCODE-->
      
 </body>
-
-<script>
-  
-  /*
-    firststeps.style.color = "#595959";
-    setInterval(displayHelloo, 1000);
-
-function displayHelloo() {
-if (localStorage.clickcountt) {
- firststeps.style.color = 'white';
-
-} else {
-helloo();
-firststeps.style.color = "#595959";
-//localStorage.clickcount = 1;
-}
-}
-
-
-
-
-      function helloo() {
-        Name.innerHTML = "First Steps";
- description.innerHTML = "Opened The Site For The First Time, Have Fun!.";
-   medd.style.opacity = 1;
-    medd.style.animation = 'medal 15s';
-    setTimeout(() => {
-
-   medd.style.opacity = 0;
-    
-  }, 15000);
-                    localStorage.clickcountt = 00001;
-      }
-      */
-
-
-    </script>
-
 </html>
